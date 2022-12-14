@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+{% load static %}
+
+
+<html lang="en">
+<head>
+{% ifequal error "no" %}
+<script>
+alert("Recorded Successfully")
+window.location.href='/home'
+</script>
+{% endifequal %}
+{% ifequal error "yes" %}
+<script>
+alert("Sorry,Try again")
+</script>
+{% endifequal %}
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satisfactory Rating System | DayFORCE</title>
+    <link rel="stylesheet" href="../static/css/register.css">
+</head>
+<form method="POST"  class="container center" style="width: 33%; padding: 40px; top: 50%; left: 50%;">
+{% csrf_token %}
+<body background="https://cutewallpaper.org/21/backgrounds-for-html-gif/Pin-on-WebDesign-Ideas-With-Code.gif">
+
+    <h1 class="main_head">Satisfactory Rating System</h1>
+<hr>
+
+<p> Name:*
+    <br><input type="text" name="t1" required placeholder="Enter Your Name">
+</p>
+  
+<p>    
+    Email*: <br>
+    <input type="email" name="t2" id="email" required placeholder="Email Please">
+</p>
+
+   
+Contact:*<br><input type="number" name="t4" required placeholder="Enter your contact number">
+</p>
+<p><fieldset>
+    <legend>How comfortable you are with your current shift:</legend>
+    
+    <select name="card1" id="" required>
+        <option value="--">--Select A Rating--</option>
+        <option value="exc">1-Excellent</option>
+        <option value="good">2-Good</option>
+        <option value="avg">3-Average</option>
+        <option value="b">4-Bad</option>
+        <option value="vb">5-Very Bad</option>
+    </select>
+    </fieldset>
+    </p>
+    <p><fieldset>
+        <legend>How comfortable you are with the meeting room:</legend>
+        
+            <select name="card2" id="" required>
+                <option value="--">--Select A Rating--</option>
+                <option value="exc">1-Excellent</option>
+                <option value="good">2-Good</option>
+                <option value="avg">3-Average</option>
+                <option value="b">4-Bad</option>
+                <option value="vb">5-Very Bad</option>
+            </select>
+        
+        </fieldset>
+        </p> 
+        <p><fieldset>
+            <legend>How comfortable you are with your current project:</legend>
+            
+            <select name="card1" id="" required>
+                <option value="--">--Select A Rating--</option>
+                <option value="exc">1-Excellent</option>
+                <option value="good">2-Good</option>
+                <option value="avg">3-Average</option>
+                <option value="b">4-Bad</option>
+                <option value="vb">5-Very Bad</option>
+            </select>
+            </fieldset>
+            </p>  
+            <p><fieldset>
+                <legend>How comfortable you are with your current team:</legend>
+                
+                <select name="card1" id="" required>
+                    <option value="--">--Select A Rating--</option>
+                    <option value="exc">1-Excellent</option>
+                    <option value="good">2-Good</option>
+                    <option value="avg">3-Average</option>
+                    <option value="b">4-Bad</option>
+                    <option value="vb">5-Very Bad</option>
+                </select>
+                </fieldset>
+                </p>                   
+        <p><fieldset>
+            <legend>Overall Rating:</legend>
+           
+            <select name="card3" id="" required>
+                <option value="--">--Select A Rating--</option>
+                <option value="exc">1-Excellent</option>
+                <option value="good">2-Good</option>
+                <option value="avg">3-Average</option>
+                <option value="b">4-Bad</option>
+                <option value="vb">5-Very Bad</option>
+            </select>
+            </fieldset>
+            </p>      
+    <p>
+        Suggestions(if any): <br>
+        <textarea name="t3" id="" cols="100" rows="5"  placeholder="Your Suggestions Here"></textarea>
+    </p>  
+<input type="submit" value="Submit Your Ratings">
+</p></form>
+</body>
+</html>

@@ -1,0 +1,1 @@
+This website is a management portal system that would that will establish a strict and punctual work schedule among the employees. It is management website build in HTML, CSS,Js, Bootstrap, Django and SQLite.

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>
+    About Us | DayFORCE
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.form-group input {
+  padding:8px;
+  width:100%;
+  margin-bottom: 10px;
+}
+.form-group textarea{
+  width:100%;
+  height: 130px;
+}
+.form-group input[type="submit"]{
+  width:auto;
+  background-color:red;
+  border:none;
+  color:#fff;
+  cursor:pointer;
+  border-radius:4px;
+  margin-top:10px;
+}
+.form-group input[type="submit"]:hover{
+  width:auto;
+  background-color:#fff;
+  border-radius:4px;
+  color:red;
+  border:1px solid red;
+  cursor:pointer;
+}
+.innerlink{
+  color: rgb(192, 82, 82);
+}
+.site-contact-details{
+  font-size: 20px;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-card w3-left-align w3-large"  style="padding-left: 30.5%; background-color: crimson;">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="http://127.0.0.1:8000/about" class="w3-bar-item w3-button w3-padding-large w3-white" >About</a>
+    <a href="http://127.0.0.1:8000/home"  class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="http://127.0.0.1:8000/calender" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Calendar</a>
+    <a href="http://127.0.0.1:8000/schedule" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Schedule</a>
+    <a href="http://127.0.0.1:8000/login" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">More</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="calendar.html" class="w3-bar-item w3-button w3-padding-large">Calendar</a>
+    <a href="schedule.html" class="w3-bar-item w3-button w3-padding-large">Schedule</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Demo</a>
+  </div>
+</div>
+
+<!-- Header -->
+<div style="background-repeat: no-repeat; background-size: cover; background-image: url(../static/images/about.png);">
+<header class="w3-container  w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">About Us</h1>
+  <p class="w3-xlarge">"Know us better"</p>
+  
+</header>
+</div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Our Aim</h1>
+      <h5 style="padding: 18px 0px ;">An aim is where the business wants to go in the future, its goals. It is a statement of purpose, e.g. we want to grow the business into Europe.
+
+        Business objectives are the stated, measurable targets of how to achieve business aims. </h5>
+
+      <p class="w3-text-grey">A mission statement sets out the business vision and values that enables employees, managers, customers and even suppliers to understand the underlying basis for the actions of the business.
+        Objectives give the business a clearly defined target. Plans can then be made to achieve these targets. This can motivate the employees. It also enables the business to measure the progress towards to its stated aims.
+      </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="https://www.vertexacc.com/wp-content/uploads/2018/10/aim.jpg" alt="" style="padding: 20px; width: 140%;">
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img src="http://www.coca-colaindia.com/content/dam/journey/in/en/private/faqs/contact-us2.jpg" alt="" style="padding: 0px; width: 140%;">
+    </div>
+
+    <div class="w3-twothird" >
+      <h1 style="padding-left: 180px;">Contact Us</h1>
+    <!--<h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>-->
+    <div class="site-contact-details">
+        <p><i class="fa fa-envelope" style="padding-left: 200px;"></i> Email: <span class="innerlink">demo@gmail.com</span></p>
+        <p><i class="fa fa-phone" style="padding-left: 200px;"></i> Phone: <span class="innerlink">9872004521</span></p>
+    </div>
+    <br><br><br><br>
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: Live Life to the fullest</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>&nbsp;&nbsp;
+    <i class="fa fa-instagram w3-hover-opacity"></i>&nbsp;&nbsp;
+    <i class="fa fa-snapchat w3-hover-opacity"></i>&nbsp;&nbsp;
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>&nbsp;&nbsp;
+    <i class="fa fa-twitter w3-hover-opacity"></i>&nbsp;&nbsp;
+    <i class="fa fa-linkedin w3-hover-opacity"></i>&nbsp;&nbsp;     
+ </div>
+ 
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
